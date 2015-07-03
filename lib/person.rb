@@ -5,7 +5,7 @@ require_relative 'config'
 #
 # Usage:
 #
-#   bundle exec ruby person <email> <first_name> <last_name>
+#   bundle exec ruby person.rb <email> <first_name> <last_name>
 #
 
 # Finds a person by email or creates one.

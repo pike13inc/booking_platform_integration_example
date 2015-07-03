@@ -7,7 +7,7 @@ require_relative 'config'
 #   bundle exec ruby visit.rb <person_id> <event_occurrence_id>
 #
 
-person_id, event_occurrence_id = ARGV
+person_id, event_occurrence_id = *ARGV
 
 visit = create_object('visits', visit: {person_id: person_id, event_occurrence_id: event_occurrence_id})
 puts "Created visit #{visit['id']}"
