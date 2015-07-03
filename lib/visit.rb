@@ -64,5 +64,11 @@ end
 person_id, event_occurrence_id, pack_product_id  = ARGV
 
 visit_id = create_visit(person_id, event_occurrence_id)
+puts "Created visit #{visit_id}"
+
 pack_id = create_pack(person_id, pack_product_id)
+puts "Created pack #{pack_id}"
+
 punch_id = create_punch(visit_id, pack_id)
+puts "Created punch #{punch_id}"
+

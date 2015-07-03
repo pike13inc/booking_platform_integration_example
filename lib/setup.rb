@@ -17,10 +17,8 @@ body = {
     },
     count: 1,
     send_expiration_notifications: false,
-
-    # Limit the validity of this pack to 1 day (this isn't critical, but recommended).
-    commitment_length: 1,
-    commitment_unit: 'day',
+    commitment_length: 12,
+    commitment_unit: 'month',
 
     # Since the integration will be manually issuing the punch (which uses a Pack to
     # pay for a Visit), there is not need to specify which services this Pack will cover.
