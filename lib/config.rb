@@ -1,8 +1,8 @@
 require 'httparty'
 require 'active_support'
 require 'active_support/core_ext/time'
-require 'helpers'
 require 'pp'
+require_relative 'helpers'
 
 ACCESS_TOKEN = ENV['FD_ACCESS_TOKEN'] || "mytoken_xxxxxxxxx"
 

@@ -38,7 +38,7 @@ to skip this step.
 In order to register clients for classes (event occurrences) in Front Desk, you will likely need to retrieve
 the schedule in order to display it to clients.
 
- * [Example code](lib/schdeule.rb)
+ * [Example code](lib/schedule.rb)
  * [Documentation](https://developer.frontdeskhq.com/docs/api/v2#endpoint-eventoccurrence)
 
 
