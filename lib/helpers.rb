@@ -18,7 +18,6 @@ def update_object(type, id, body)
 end
 
 def delete_object(type, id)
-  path ||= "/api/v2/desk/#{type}?access_token=#{ACCESS_TOKEN}"
-  rsp = HTTParty.delete(HOST + path)
+  rsp = HTTParty.delete(HOST + "/api/v2/desk/#{type}/#{id}?access_token=#{ACCESS_TOKEN}")
   raise "Request failed: #{rsp.code}, #{rsp}" unless rsp.success?
 end

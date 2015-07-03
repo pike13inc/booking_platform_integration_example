@@ -4,7 +4,7 @@ require_relative 'config'
 # Cancels a visit and optionally deletes the plan that paid for it
 #
 # Usage:
-#   bundle exec ruby cancel <visit_id> [delete_plan true|false]
+#   bundle exec ruby cancel.rb <visit_id> [delete_plan true|false]
 #
 
 def retrieve_punch_for_visit_id(visit_id)

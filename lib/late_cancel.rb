@@ -4,7 +4,7 @@ require_relative 'config'
 # Late canceling a visit
 #
 # Usage:
-#    bundle exec ruby late_cancel <visit_id>
+#    bundle exec ruby late_cancel.rb <visit_id>
 #
 
 visit_id = ARGV[0]
