@@ -14,4 +14,4 @@ ACCESS_TOKEN = ENV['FD_ACCESS_TOKEN'] || "mytoken_xxxxxxxxx"
 #
 # For the purposes of this example, we will assume the subdomain of the
 # business has already been obtained.
-HOST = ENV['FD_HOST'] || "http://somebusiness.frontdeskhq.com"
+HOST = ENV['FD_HOST'] || "https://somebusiness.frontdeskhq.com"
