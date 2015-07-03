@@ -1,4 +1,4 @@
-# Intergrating your Class Schedule Aggregator Application with Front Desk
+# Intergrating your Membership Aggregator Application with Front Desk
 
 ## Setup
 
