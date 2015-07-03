@@ -24,7 +24,7 @@ body = {
     commitment_unit: 'month',
 
     # Since the integration will be manually issuing the punch (which uses a Pack to
-    # pay for a Visit), there is not need to specify which services this Pack will cover.
+    # pay for a Visit), there is no need to specify which services this Pack will cover.
     service_ids: []
   }
 }
