@@ -15,8 +15,7 @@ end
 visit_id, delete_plan = *ARGV
 delete_plan = delete_plan == 'true'
 if delete_plan
-  # In order to delete the plan, we need to retrieve the
-  # punch in order to get the plan id.
+  # To delete the plan, we need to retrieve the punch in order to get the plan id.
   punch = retrieve_punch_for_visit_id(visit_id)
   if punch['plan_id'].present?
     puts "Deleting plan: #{punch['plan_id']}"
