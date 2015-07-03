@@ -1,15 +1,9 @@
 require 'httparty'
 require 'active_support'
 require 'active_support/core_ext/time'
+require 'helpers'
 require 'pp'
 
-# This example assumes you have already obtained an access token via
-# the OAuth2 flow.
-
-# In order to obtain the appropriate authorization, the access token must
-# be associated w/ a staff member that has manager permissions or higher.
-# In general, we recommend the business owner creates a separate manager
-# profile for the integration to make it easier to track activity.
 ACCESS_TOKEN = ENV['FD_ACCESS_TOKEN'] || "mytoken_xxxxxxxxx"
 
 # This must include the subdomain of the business on Front Desk. This

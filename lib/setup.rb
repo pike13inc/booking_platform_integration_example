@@ -25,12 +25,5 @@ body = {
     service_ids: []
   }
 }
-rsp = HTTParty.post(HOST + "/api/v2/desk/pack_products?access_token=#{ACCESS_TOKEN}", body: body)
-if rsp.success?
-  pack_product_id = rsp['pack_products'][0]['id']
-  puts "SUCCESS: Created PackProduct: #{pack_product_id}!  Put this in a safe spot."
-else
-  puts "FAILED!"
-  puts "Returned: #{rsp.code}"
-  pp rsp
-end
+pack_product = create_object('pack_products', body)
+puts "SUCCESS: Created PackProduct: #{pack_product['id']}!  Put this in a safe spot."
