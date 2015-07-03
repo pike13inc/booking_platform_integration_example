@@ -11,7 +11,7 @@ with a staff member that has manager permissions or higher. In general, we recom
 the business owner creates a separate manager or owner profile for the integration
 to make it easier to track activity.
 
- * [Dcoumentation](https://developer.frontdeskhq.com/docs/api/v2#authentication)
+ * [Documentation](https://developer.frontdeskhq.com/docs/api/v2#authentication)
 
 
 
