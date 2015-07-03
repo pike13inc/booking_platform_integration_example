@@ -2,7 +2,7 @@
 
 ## Setup
 
-### Authentication and Authorization
+### Authentication and authorization
 
 This example assumes you have already obtained an access token via the OAuth2 flow.
 
@@ -15,7 +15,7 @@ to make it easier to track activity.
 
 
 
-### Create a PackProduct to pay for a Visit
+### Create a pack product to pay for a visit
 
 If your application is responsible for payment of the visit, you will likely want to create
 a PackProdcut in Front Desk.  Later you will reference this PackProduct when creating Packs
