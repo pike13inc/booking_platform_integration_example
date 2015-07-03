@@ -1,6 +1,10 @@
 # Intergrating your Membership Aggregator Application with Front Desk
 
-## Setup
+Note: The code included in this repository is strictly for example purposes only and should
+not be consdered production ready.
+
+
+## Setting up your integration
 
 ### Authentication and authorization
 
