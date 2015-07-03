@@ -4,7 +4,7 @@ require_relative 'config'
 # Pays for a visit by creating a pack and a punch
 #
 # Usage:
-#   bundle exec ruby visit.rb <person_id> <visit_id> <pack_product_id>
+#   bundle exec ruby pack_and_punch.rb <person_id> <visit_id> <pack_product_id>
 #
 
 person_id, visit_id, pack_product_id  = ARGV
