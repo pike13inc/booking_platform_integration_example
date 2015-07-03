@@ -7,9 +7,6 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
-    columnize (0.9.0)
     httparty (0.13.5)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -26,5 +23,4 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  byebug
   httparty
