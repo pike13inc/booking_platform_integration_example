@@ -28,7 +28,7 @@ which visits were paid for by your service within Front Desk reporting.  If are 
 registering clients for classes and not involved in memberships or payments, you may be able
 to skip this step.
 
- * [Example code](lib/setup.rb)
+ * [Example code](lib/pack_product.rb)
  * [Documentation](https://developer.frontdeskhq.com/docs/api/v2?preview=true#endpoint-pack-product)
 
 
