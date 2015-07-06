@@ -28,5 +28,5 @@ body = {
     service_ids: []
   }
 }
-pack_product = create_object('pack_products', body)
+pack_product = create_object('pack_products', body) # create_object can be found in lib/helpers.rb
 puts "SUCCESS: Created PackProduct: #{pack_product['id']}!  Put this in a safe spot."
