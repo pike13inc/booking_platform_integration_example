@@ -14,9 +14,9 @@ from, to = *ARGV
 
 puts "Fetching the schedule from #{from} to #{to}..."
 
-# Note: This uses the "front" API.  This will only return event occurrences that are publically
+# Note: This uses the "front" API.  This will only return event occurrences that are publicly
 # available.  This is analogous to visiting the website as a client.  If you wish to retrieve
-# schedule information that is only accessible to staff, use the "desk" equivelent endpoint.
+# schedule information that is only accessible to staff, use the "desk" equivalent endpoint.
 rsp = HTTParty.get(HOST + "/api/v2/front/event_occurrences?from=#{from}&to=#{to}&access_token=#{ACCESS_TOKEN}")
 if rsp.success?
   if rsp['event_occurrences'].present?
