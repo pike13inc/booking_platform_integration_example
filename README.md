@@ -1,4 +1,4 @@
-# Integrating your Membership Aggregator Application with Front Desk
+# Integrating your Booking Platform Application with Front Desk
 
 Note: The code included in this repository is strictly for example purposes only and should
 not be considered production ready.
@@ -33,7 +33,7 @@ to skip this step.
 
 
 
-## Retrieving the schedule
+### Retrieving the schedule
 
 In order to register clients for classes (event occurrences) in Front Desk, you will likely need to retrieve
 the schedule in order to display it to clients.
@@ -41,9 +41,9 @@ the schedule in order to display it to clients.
  * [Example code](lib/schedule.rb)
  * [Documentation](https://developer.frontdeskhq.com/docs/api/v2#endpoint-eventoccurrence)
 
+## Class Registration
 
-
-## Finding and creating clients
+### Finding and creating clients
 
 In order to reconcile clients in your system to clients in Front Desk, we recommend looking
 them up by email (although you can also search by name or barcode as well).
@@ -55,7 +55,7 @@ If no match is found, you will want to create a new client.
 
 
 
-## Registering clients for a class
+### Registering clients for a class
 
 Once a client has selected an event occurrence they wish to register for. And you have found (or created)
 a client profile for them in Front Desk. Then you can create a visit. This will add them to the class roster.
@@ -65,7 +65,7 @@ a client profile for them in Front Desk. Then you can create a visit. This will 
 
 
 
-## Paying for a visit with a pack
+### Paying for a visit with a pack
 
 After a visit has been created, you may wish to mark it as paid by creating a pack and a punch.  If
 your system is responsible for collecting payment, you will typically do this immediately after
@@ -75,9 +75,9 @@ creating the visit. If not, you may want to skip this step entirely.
  * [Pack Documentation](https://developer.frontdeskhq.com/docs/api/v2?preview=true#endpoint-pack)
  * [Punch Documentation](https://developer.frontdeskhq.com/docs/api/v2#endpoint-punch)
 
+## Updating a visit
 
-
-## Deleting a visit (and optionally the pack that paid for it)
+### Deleting a visit (and optionally the pack that paid for it)
 
 If a person cancels a visit in your system you will need to delete that visit in Front Desk.
 If you orginally created a single-use pack to pay for the visit, you will likely want to
@@ -87,9 +87,7 @@ delete that pack as well.  Deleting the visit or the pack will also delete the p
  * [Visit Documentation](https://developer.frontdeskhq.com/docs/api/v2#endpoint-visit)
  * [Pack Documentation](https://developer.frontdeskhq.com/docs/api/v2?preview=true#endpoint-pack)
 
-
-
-## Marking a visit as late canceled
+### Marking a visit as late canceled
 
 If you wish to enforce a late cancel policy in your application, you can reflect late cancels
 in Front Desk by applying the "late_cancel" transition to a visit.
