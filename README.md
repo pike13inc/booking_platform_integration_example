@@ -22,9 +22,9 @@ to make it easier to track activity.
 ### Create a pack product to pay for a visit
 
 If your application is responsible for payment of the visit, you will likely want to create
-a PackProdcut in Front Desk.  Later you will reference this PackProduct when creating Packs
+a PackProduct in Front Desk.  Later you will reference this PackProduct when creating Packs
 which will be used to mark individual visits as paid.  This will allow business owners to report on
-which visits were paid for by your service within Front Desk reporting.  If are simply
+which visits were paid for by your service within Front Desk reporting.  If you are simply
 registering clients for classes and not involved in memberships or payments, you may be able
 to skip this step.
 
@@ -57,8 +57,8 @@ If no match is found, you will want to create a new client.
 
 ## Registering clients for a class
 
-Once a client has selected an event occurrence they wish to register for and you have found (or created)
-a client profile for them in Front Desk, you can create a visit. This will add them to the class roster.
+Once a client has selected an event occurrence they wish to register for. And you have found (or created)
+a client profile for them in Front Desk. Then you can create a visit. This will add them to the class roster.
 
  * [Example code](lib/visit.rb)
  * [Documentation](https://developer.frontdeskhq.com/docs/api/v2#endpoint-visit)
@@ -69,7 +69,7 @@ a client profile for them in Front Desk, you can create a visit. This will add t
 
 After a visit has been created, you may wish to mark it as paid by creating a pack and a punch.  If
 your system is responsible for collecting payment, you will typically do this immediately after
-creating the visit.  If not, you may want to skip this step entirely.
+creating the visit. If not, you may want to skip this step entirely.
 
  * [Example code](lib/pack_and_punch.rb)
  * [Pack Documentation](https://developer.frontdeskhq.com/docs/api/v2?preview=true#endpoint-pack)
@@ -80,7 +80,7 @@ creating the visit.  If not, you may want to skip this step entirely.
 ## Deleting a visit (and optionally the pack that paid for it)
 
 If a person cancels a visit in your system you will need to delete that visit in Front Desk.
-If you orgininally created a single-use pack to pay for the visit, you will likely want to
+If you orginally created a single-use pack to pay for the visit, you will likely want to
 delete that pack as well.  Deleting the visit or the pack will also delete the punch.
 
  * [Example code](lib/cancel.rb)
