@@ -16,7 +16,7 @@ def find_or_create_client(email, first_name, last_name)
     puts "FOUND: #{person_id}"
   else
     puts "not found"
-    print "Creating client client for #{email}..."
+    print "Creating client for #{email}..."
     person = create_object("people", person: {email: email, first_name: first_name, last_name: last_name})
     puts "CREATED: #{person['id']} (put this in a safe place)"
   end
