@@ -26,7 +26,7 @@ end
 # Finds a person by email
 #
 # Documentation:
-# https://developer.frontdeskhq.com/docs/api/v2#endpoint-person
+# https://developer.pike13.com/docs/api/v2#endpoint-person
 #
 def find_client_by_email(email)
   rsp = HTTParty.get(HOST + "/api/v2/desk/people/search?q=#{email}&fields=email&access_token=#{ACCESS_TOKEN}")

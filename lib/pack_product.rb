@@ -7,7 +7,7 @@ require_relative 'config'
 #    bundle exec ruby pack_product.rb
 #
 # Documentation:
-# https://developer.frontdeskhq.com/docs/api/v2?preview=true#endpoint-pack-product
+# https://developer.pike13.com/docs/api/v2?preview=true#endpoint-pack-product
 #
 body = {
   pack_product: {

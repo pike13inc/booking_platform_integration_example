@@ -7,7 +7,7 @@ require_relative 'config'
 #    bundle exec ruby schedule.rb <start_time> <end_time>
 #
 # Documentation:
-# https://developer.frontdeskhq.com/docs/api/v2#endpoint-eventoccurrence
+# https://developer.pike13.com/docs/api/v2#endpoint-eventoccurrence
 #
 
 from, to = *ARGV
