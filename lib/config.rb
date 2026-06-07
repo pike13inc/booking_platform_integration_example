@@ -1,5 +1,6 @@
 require 'httparty'
 require 'active_support'
+require 'active_support/core_ext/object/blank'
 require 'active_support/core_ext/time'
 require 'pp'
 require_relative 'helpers'
